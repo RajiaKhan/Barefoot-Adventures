@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import Image from "next/image";
+import React, { useState } from "react";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import {
   CarouselProvider,
   Slider,
@@ -7,13 +8,13 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
-const Index = () => {
+export default function Index() {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="justify-center container mx-auto">
         <div className="  ">
-          <div className="flex flex-wrap justify-between items-center px-20]">
+          <div className="flex flex-wrap justify-between items-center ]">
             <Image
               className="cursor-pointer"
               src="/Hourglass.svg"
@@ -21,7 +22,7 @@ const Index = () => {
               height={80}
             />
             <button
-              className="ml-auto block xl:hidden "
+              className="ml-auto block xl:hidden"
               onClick={() => setShowMenu(!showMenu)}
             >
               <svg
@@ -37,49 +38,70 @@ const Index = () => {
             <ul className="xl:flex hidden gap-16">
               <li className=" cursor-pointer relative">
                 <div className="flex items-center ">
-                  <a className="  cursor-pointer font-semibold text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section1"
+                    className="  cursor-pointer font-semibold text-base leading-4 text-gray-600 "
+                  >
                     Home
                   </a>
                 </div>
               </li>
               <li className="  relative mx-4">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section2"
+                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     Explore
                   </a>
                 </div>
               </li>
               <li className="  relative">
                 <div className="flex items-center ">
-                  <a className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section3"
+                    className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     Packages
                   </a>
                 </div>
               </li>
               <li className="  relative mx-4">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section4"
+                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     Timeline
                   </a>
                 </div>
               </li>
               <li className="  relative mx-4">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section5"
+                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     About
                   </a>
                 </div>
               </li>
               <li className="  relative">
                 <div className="flex items-center ">
-                  <a className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section6"
+                    className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     Contact
                   </a>
                 </div>
               </li>
               <li className="  relative mx-4">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer font-semibold text-base leading-4 text-gray-600  ">
+                  <a
+                    href="#section7"
+                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+                  >
                     Register
                   </a>
                 </div>
@@ -92,49 +114,70 @@ const Index = () => {
             >
               <li className=" cursor-pointer relative pb-4 pt-8">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section8"
+                    className="cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Home
                   </a>
                 </div>
               </li>
               <li className="  relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section9"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Explore
                   </a>
                 </div>
               </li>
               <li className="relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section3"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Packages
                   </a>
                 </div>
               </li>
               <li className="relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section4"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Timeline
                   </a>
                 </div>
               </li>
               <li className="relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section5"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     About
                   </a>
                 </div>
               </li>
               <li className="relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section6"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Contact
                   </a>
                 </div>
               </li>
               <li className="relative py-2">
                 <div className="flex items-center ">
-                  <a className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 ">
+                  <a
+                    href="#section7"
+                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
+                  >
                     Register
                   </a>
                 </div>
@@ -143,9 +186,9 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block xl:block 2xl:block ">
+      <div className="hidden lg:block xl:block 2xl:block " id="section1">
         <div className="container mx-auto mt-12 flex relative justify-center px-20 lg:px-3 xl:px-3 2xl:px-3 ">
-          <div className="pt-20 max-w-[31%] ">
+          <div className="pt-20 max-w-[31%] " id="section8">
             <h1 className="text-6xl lg:text-8xl xl:text-9xl 2xl:text-9xl  text-gray-800 mt-28 font-bold z-20 uppercase ">
               BAREFOOT ADVENTURES
             </h1>
@@ -267,7 +310,10 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="container hidden 2xl:block xl:block mx-auto mt-12 mb-56">
+      <div
+        className="container hidden 2xl:block xl:block mx-auto mt-12 mb-56"
+        id="section3"
+      >
         <div className="flex gap-7">
           <div className="w-11/12">
             <div className="flex gap-5">
@@ -391,16 +437,22 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto hidden  xl:block 2xl:block">
+      <div
+        className="container mx-auto hidden  xl:block 2xl:block"
+        id="section2"
+      >
         <div className="flex   gap-12 mt-12 mb-12">
           <div className="w-7/12">
-            <h1 className="text-9xl text-left font-bold mt-44 text-gray-800">
+            <h1
+              className="text-9xl text-left   font-bold mt-44 text-gray-800"
+              id="section-9"
+            >
               POPULAR PLACE
             </h1>
           </div>
           <div className="w-10/12 relative ">
             <Image className="" src="/Norway.svg" width={733} height={600} />
-            <h1 className="absolute p-4 text-6xl bottom-36 text-white font-semibold">
+            <h1 className="absolute p-4 text-6xl bottom-36  lg:bottom-36  xl:bottom-44 2xl:bottom-36  text-white font-semibold">
               NORWAY
             </h1>
             <h1 className="absolute w-9/12 bottom-6 text-white text-2xl p-4">
@@ -419,7 +471,7 @@ const Index = () => {
                 width={733}
                 height={600}
               />
-              <h1 className="absolute p-4 text-6xl bottom-36 text-white font-semibold">
+              <h1 className="absolute p-4 text-6xl  bottom-36 lg:bottom-36  xl:bottom-44 2xl:bottom-36  lg:bottom-48 text-white font-semibold">
                 SWITERZERLAND
               </h1>
               <h1 className="absolute bottom-6 w-9/12 text-white text-2xl p-4">
@@ -437,13 +489,13 @@ const Index = () => {
         </div>
         <div className="flex gap-12 mt-12 mb-12">
           <div className="w-7/12">
-            <h1 className="text-9xl font-bold mt-44 text-gray-800 text-left">
+            <h1 className="text-9xl font-bold mt-44  text-gray-800 text-left">
               TO HAVE FUN
             </h1>
           </div>
           <div className="w-10/12 relative ">
             <Image className="" src="/iceland.svg" width={733} height={600} />
-            <h1 className="absolute p-4 text-6xl bottom-36 text-white font-semibold">
+            <h1 className="absolute p-4 text-6xl   lg:bottom-36  xl:bottom-44 2xl:bottom-36  text-white font-semibold">
               ICELAND
             </h1>
             <h1 className="absolute bottom-6 w-9/12 text-white text-2xl p-4">
@@ -457,7 +509,7 @@ const Index = () => {
           <div className="flex">
             <div className="w-10/12 relative">
               <Image className="" src="/greece.svg" width={733} height={600} />
-              <h1 className="absolute p-4 text-6xl bottom-36 text-white font-semibold">
+              <h1 className="absolute p-4 text-6xl   lg:bottom-36  xl:bottom-44 2xl:bottom-36   text-white font-semibold">
                 GREECE
               </h1>
               <h1 className="absolute bottom-6 w-9/12 text-white text-2xl p-4">
@@ -481,10 +533,10 @@ const Index = () => {
           </div>
           <div className="w-10/12 relative ">
             <Image className="" src="/PARIS.svg" width={733} height={600} />
-            <h1 className="absolute p-4 text-6xl bottom-36 text-white font-semibold">
+            <h1 className="absolute p-4 text-6xl   lg:bottom-36  xl:bottom-44 2xl:bottom-36 text-white font-semibold">
               PARIS
             </h1>
-            <h1 className="absolute w-11/12 bottom-6 text-white text-sm p-4">
+            <h1 className="absolute w-9/12 bottom-6 text-white text-2xl p-4">
               Norway is a Scandinavian country encompassing mountains, glaciers
               and deep coastal fjords. Oslo, the capital, is a city of green
               spaces and museums.
@@ -494,8 +546,8 @@ const Index = () => {
       </div>
       <div className="container mx-auto block  2xl:hidden xl:hidden p-5">
         <div className="flex flex-col justify-center items-center mx-auto place-content-center">
-          <div className="">
-            <h1 className="text-3xl md:text-3xl lg:text-9xl  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  text-center xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
               POPULAR PLACES
             </h1>
           </div>
@@ -515,8 +567,8 @@ const Index = () => {
               spaces and museums.
             </h1>
           </div>
-          <div className="">
-            <h1 className="text-3xl md:text-3xl lg:text-9xl  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-44 text-gray-800">
               TO GO AND LIVE
             </h1>
           </div>
@@ -536,8 +588,8 @@ const Index = () => {
               spaces and museums.
             </h1>
           </div>
-          <div className="">
-            <h1 className="text-3xl md:text-3xl lg:text-9xl  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl text-center  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
               TO HAVE FUN
             </h1>
           </div>
@@ -557,8 +609,8 @@ const Index = () => {
               spaces and museums.
             </h1>
           </div>
-          <div className="">
-            <h1 className="text-3xl md:text-3xl lg:text-9xl  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl text-center  2xl:text-9xl font-bold mt-44 text-gray-800">
               TO WATCH SUNSETS
             </h1>
           </div>
@@ -578,8 +630,8 @@ const Index = () => {
               spaces and museums.
             </h1>
           </div>
-          <div className="">
-            <h1 className="text-3xl md:text-3xl lg:text-9xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-44 text-gray-800">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-44 text-gray-800">
               TO HAVE MOMENT OF A LIFETIME
             </h1>
           </div>
@@ -601,10 +653,10 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-32 mb-12">
+      <div className="container mx-auto mt-32 mb-12" id="section5">
         <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mx-auto gap-12 ">
           <div className="w-11/12">
-            <h1 className="text-2xl lg:text-9xl xl:text-9xl 2xl:text-9xl font-bold mt-20 text-gray-800 text-center">
+            <h1 className="text-2xl lg:text-7xl xl:text-9xl 2xl:text-9xl font-bold mt-20 text-gray-800 text-center">
               ABOUT US
             </h1>
           </div>
@@ -617,7 +669,7 @@ const Index = () => {
                 height={128}
               />
             </div>
-            <h1 className="text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-semibold mt-8 text-gray-600">
+            <h1 className="text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl font-semibold mt-8 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               laoreet lectus quam, quis euismod turpis ornare quis. Morbi
               tincidunt erat quis eros semper dignissim. Cras risus dui,
@@ -627,7 +679,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-12 mb-12">
+      <div className="container mx-auto mt-12 mb-12" id="section4">
         <div className="flex  flex-col-reverse  lg:flex-row xl:flex-row">
           <div className="flex flex-col md:flex-row lg;lflex-row 2xl:flex-row gap-12  mx-auto">
             <div className="mt-6  md:mt-24 lg:mt-24 xl:mt-24 2xl:mt-24">
@@ -656,9 +708,9 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto pt-32 pb-32">
+      <div className="container mx-auto pt-32 ">
         <div className=" mt-12">
-          <h1 className="text-2xl lg:text-9xl xl:text-9xl 2xl:text-9xl font-bold text-gray-800  ">
+          <h1 className="text-2xl lg:text-6xl xl:text-9xl 2xl:text-9xl font-bold text-gray-800  ">
             HOLIDAYS SEASON SPECIAL OFFERS
           </h1>
           <div className="flex">
@@ -677,34 +729,254 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-12">
-          <div className="">
-            <Image
-              className=""
-              src="/Rectangle 49.svg"
-              width={296}
-              height={265}
-            />
-          </div>
-          <div className="">
-            <Image
-              className=""
-              src="/Rectangle 50.svg"
-              width={296}
-              height={265}
-            />
-          </div>
-          <div className="">
-            <Image
-              className=""
-              src="/Rectangle 51.svg"
-              width={296}
-              height={265}
-            />
-          </div>
+      </div>
+      <div className="2xl:mx-auto 2xl:container flex justify-left gap-12 ">
+        <div className="px-6 py-12 w-full lg:w-4/5">
+          {/* Carousel for Small-Sized Screen */}
+          <CarouselProvider
+            className="relative block sm:hidden"
+            naturalSlideWidth={100}
+            isIntrinsicHeight={true}
+            totalSlides={3}
+            visibleSlides={1}
+            step={1}
+            infinite={true}
+          >
+            <div className=" flex justify-center items-center">
+              <ButtonBack
+                role="button"
+                aria-label="slide backward"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                id="prev"
+              >
+                <svg
+                  width={8}
+                  height={14}
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="black"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </ButtonBack>
+              <Slider>
+                <Slide index={0}>
+                  <div className="gallery-cell lg:mr-7 mr-6 lg:w-1/2 sm:w-96 ">
+                    <div className="relative lg:block hidden ">
+                      <img
+                        src="/Rectangle 49.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 49.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide index={1}>
+                  <div className="gallery-cell lg:mr-7 mr-6 lg:w-1/2 sm:w-96">
+                    <div className="relative lg:block hidden">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide index={2}>
+                  <div className="gallery-cell lg:mr-7 mr-6 lg:w-1/2 sm:w-96">
+                    <div className="relative lg:block hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+              </Slider>
+              <ButtonNext
+                role="button"
+                aria-label="slide forward"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 right-0 mr-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                id="next"
+              >
+                <svg
+                  width={8}
+                  height={14}
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="black"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </ButtonNext>
+            </div>
+          </CarouselProvider>
+
+          {/* Carousel for Medium and Large-Sized Screen */}
+          <CarouselProvider
+            className="relative hidden sm:block"
+            naturalSlideWidth={100}
+            isIntrinsicHeight={true}
+            totalSlides={3}
+            visibleSlides={1}
+            step={1}
+            infinite={true}
+            currentSlide={1}
+          >
+            <div className="js-flickity flex justify-center items-center ">
+              <ButtonBack
+                role="button"
+                aria-label="slide backward"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full  flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                id="prev"
+              >
+                <svg
+                  width={8}
+                  height={14}
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="black"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </ButtonBack>
+              <Slider className="carousel__sliderLarge ">
+                <Slide className="carousel__inner-slideLarge" index={0}>
+                  <div className="gallery-cell">
+                    <div className="relative lg:block w-80 hidden ">
+                      <img
+                        src="/Rectangle 49.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 49.svg"
+                        alt="sitting area"
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide className="carousel__inner-slideLarge" index={1}>
+                  <div className="gallery-cell">
+                    <div className="relative lg:block hidden w-80 ">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden ">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide className="carousel__inner-slideLarge" index={2}>
+                  <div className="gallery-cell">
+                    <div className="relative  w-80 lg:block hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover  mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+              </Slider>
+              <ButtonNext
+                role="button"
+                aria-label="slide forward"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 right-0 mr-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                id="next"
+              >
+                <svg
+                  width={8}
+                  height={14}
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="black"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </ButtonNext>
+            </div>
+          </CarouselProvider>
         </div>
       </div>
-      <footer className="hidden lg:block 2xl:block 2xl:block bg-gray-800 w-full hidden">
+      <footer
+        className="hidden lg:block 2xl:block 2xl:block bg-gray-800 w-full hidden "
+        id="section6"
+      >
         <div className="relative container mx-auto">
           <Image className="" src="/image 11.svg" width={1440} height={384} />
           <div className="flex   place-content-center place-items-center justify-center mx-auto justify-items-center ">
@@ -769,7 +1041,10 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className=" w-5/12 bottom-24 top-24 lg:top-12 lg:bottom-16 xl:top-32 xl:bottom-32 2xl:top-24 2xl:bottom-24  right-12 absolute">
+            <div
+              className=" w-5/12 bottom-24 top-24 lg:top-12 lg:bottom-16 xl:top-32 xl:bottom-32 2xl:top-24 2xl:bottom-24  right-12 absolute"
+              id="section7"
+            >
               <h1 className="font-semibold text-3xl text-white">
                 Join our mailing list for update about latest packages and
                 deals!
@@ -878,8 +1153,46 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      <style>
+        {`
+                    .gallery-cell {
+                        height: 386px;
+                        padding-right:15px;
+                    }
+                    @media (min-width: 300px) and (max-width: 420px) {
+                        .gallery-cell {
+                            height: 286px !important;
+                            
+                        }
+                    }
+                    
+                    @media (max-width: 640px) {
+                        .gallery-cell {
+                            padding-right:0;
+                        }
+                    }
+
+                    .carousel__sliderLarge {
+                        padding-left: 33%;
+                        padding-right: 33%;
+                    }
+
+                    /* gives us the illusion of spaces between the slides */
+                    .carousel__inner-slideLarge {
+                        width: calc(100% - 20px);
+                        height: calc(100% - 20px);
+                        left: 10px;
+                        top: 10px;
+                        
+                    }
+                    html{
+                      scroll-behavior: smooth;
+                    }
+                     
+                     
+                `}
+      </style>
     </>
   );
-};
-
-export default Index;
+}
