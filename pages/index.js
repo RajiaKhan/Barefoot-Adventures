@@ -9,185 +9,167 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 export default function Index() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   return (
     <>
       <div className="justify-center container mx-auto">
         <div className="  ">
-          <div className="flex flex-wrap justify-between items-center ]">
-            <Image
-              className="cursor-pointer"
-              src="/Hourglass.svg"
-              width={80}
-              height={80}
-            />
-            <button
-              className="ml-auto block xl:hidden"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <svg
-                fill="#000000"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 30 30"
-                width="30px"
-                height="30px"
-              >
-                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
-              </svg>
-            </button>
-            <ul className="xl:flex hidden gap-16">
-              <li className=" cursor-pointer relative">
-                <div className="flex items-center ">
-                  <a
-                    href="#section1"
-                    className="  cursor-pointer font-semibold text-base leading-4 text-gray-600 "
-                  >
-                    Home
+          <nav className="container mx-auto ">
+            <div className="justify-between px-4 mx-auto items-center lg:max-w-7xl xl:flex 2xl:flex lg:flex md:px-8">
+              <div>
+                <div className="flex items-center justify-between py-3 md:py-5 ">
+                  <a href="#">
+                    <svg
+                      width="34"
+                      height="22"
+                      viewBox="0 0 34 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17 7.8001L4.2 1.4001L1 3.0001L1 19.0001L4.2 20.6001M4.2 20.6001L20.2 12.6001M4.2 20.6001L26.6 9.4001V12.6001M7.4 12.6001L10.6 11.0001L7.4 9.4001V12.6001ZM7.4 12.6001L20.2 6.2001M7.4 12.6001L29.8 1.4001L33 3.0001V19.0001L29.8 20.6001L17 14.2001"
+                        stroke="#1F2937"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
                   </a>
+                  <div className="xl:hidden 2xl:hidden lg:hidden">
+                    <button
+                      className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                      onClick={() => setNavbar(!navbar)}
+                    >
+                      {navbar ? (
+                        <svg
+                          width="17"
+                          height="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <metadata id="imagebot_6">image/svg+xml</metadata>
+                          <g label="Layer 1" id="imagebot_2">
+                            <g
+                              label="Layer 1"
+                              transform="translate(-7.38281, -6.73438) matrix(0.793666, 0, 0, 0.822399, 3.34257, 2.74278)"
+                              id="imagebot_3"
+                            >
+                              <path
+                                opacity="0.8"
+                                fill="#000000"
+                                stroke="#000000"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-miterlimit="4"
+                                d="M5.09028,4.85182L27.05888,26.99902"
+                                id="imagebot_5"
+                              />
+                              <path
+                                opacity="0.8"
+                                fill="#000000"
+                                stroke="#000000"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-miterlimit="4"
+                                d="M5.09028,26.99902L27.05888,4.85182"
+                                id="imagebot_4"
+                              />
+                            </g>
+                            <title>Layer 1</title>
+                          </g>
+                        </svg>
+                      ) : (
+                        <svg
+                          fill="#000000"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 30 30"
+                          width="30px"
+                          height="30px"
+                        >
+                          <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </div>
-              </li>
-              <li className="  relative mx-4">
-                <div className="flex items-center ">
-                  <a
-                    href="#section2"
-                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
+              </div>
+              <div>
+                <div
+                  className={`flex-1 justify-self-center pb-3 mt-8 xl:block 2xl:block lg:block md:pb-0 md:mt-0 ${
+                    navbar ? "block" : "hidden"
+                  }`}
+                >
+                  <ul
+                    className="items-center gap-20
+               jy-center  xl:flex 2xl:flex lg:flex space-y-0"
                   >
-                    Explore
-                  </a>
+                    <li className="py-3">
+                      <a
+                        href="#section1"
+                        className="font-semibold text-gray-600"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section2"
+                        className="font-semibold text-gray-600"
+                      >
+                        Explore
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section3"
+                        className="font-semibold text-gray-600"
+                      >
+                        Packages
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section4"
+                        className="font-semibold text-gray-600"
+                      >
+                        Timeline
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section5"
+                        className="font-semibold text-gray-600"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section6"
+                        className="font-semibold text-gray-600"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                    <li className="py-3">
+                      <a
+                        href="#section7"
+                        className="font-semibold text-gray-600"
+                      >
+                        Register
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li className="  relative">
-                <div className="flex items-center ">
-                  <a
-                    href="#section3"
-                    className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  "
-                  >
-                    Packages
-                  </a>
-                </div>
-              </li>
-              <li className="  relative mx-4">
-                <div className="flex items-center ">
-                  <a
-                    href="#section4"
-                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
-                  >
-                    Timeline
-                  </a>
-                </div>
-              </li>
-              <li className="  relative mx-4">
-                <div className="flex items-center ">
-                  <a
-                    href="#section5"
-                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
-                  >
-                    About
-                  </a>
-                </div>
-              </li>
-              <li className="  relative">
-                <div className="flex items-center ">
-                  <a
-                    href="#section6"
-                    className=" cursor-pointer font-semibold text-base leading-4 text-gray-600  "
-                  >
-                    Contact
-                  </a>
-                </div>
-              </li>
-              <li className="  relative mx-4">
-                <div className="flex items-center ">
-                  <a
-                    href="#section7"
-                    className="cursor-pointer font-semibold text-base leading-4 text-gray-600  "
-                  >
-                    Register
-                  </a>
-                </div>
-              </li>
-            </ul>
-            <ul
-              className={`${
-                showMenu ? " xl:hidden flex " : "hidden"
-              } flex-col w-full px-8  rounded-xl my-6  `}
-            >
-              <li className=" cursor-pointer relative pb-4 pt-8">
-                <div className="flex items-center ">
-                  <a
-                    href="#section8"
-                    className="cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Home
-                  </a>
-                </div>
-              </li>
-              <li className="  relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section9"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Explore
-                  </a>
-                </div>
-              </li>
-              <li className="relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section3"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Packages
-                  </a>
-                </div>
-              </li>
-              <li className="relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section4"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Timeline
-                  </a>
-                </div>
-              </li>
-              <li className="relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section5"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    About
-                  </a>
-                </div>
-              </li>
-              <li className="relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section6"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Contact
-                  </a>
-                </div>
-              </li>
-              <li className="relative py-2">
-                <div className="flex items-center ">
-                  <a
-                    href="#section7"
-                    className="cursor-pointer cursor-pointer font-normal text-base leading-4 text-gray-600 "
-                  >
-                    Register
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-      <div className="hidden lg:block xl:block 2xl:block " id="section1">
-        <div className="container mx-auto mt-12 flex relative justify-center px-20 lg:px-3 xl:px-3 2xl:px-3 ">
+      <div className="hidden lg:block xl:block 2xl:block ">
+        <div
+          className="container mx-auto mt-12 flex relative justify-center px-20 lg:px-3 xl:px-3 2xl:px-3 "
+          id="section1"
+        >
           <div className="pt-20 max-w-[31%] " id="section8">
             <h1 className="text-6xl lg:text-8xl xl:text-9xl 2xl:text-9xl  text-gray-800 mt-28 font-bold z-20 uppercase ">
               BAREFOOT ADVENTURES
@@ -330,14 +312,14 @@ export default function Index() {
                 </div>
                 <div className=" mt-12 border border-gray-200 p-5">
                   <h1 className="text-gray-600 text-9xl font-bold">3.</h1>
-                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
+                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold text-gray-800">
                     Finalize the
                   </h1>
-                  <div className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
-                    <h1 className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
+                  <div className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold text-gray-800">
+                    <h1 className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold text-gray-800">
                       plan we{" "}
                     </h1>
-                    <h1 className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold ml-3">
+                    <h1 className="text-7xl flex lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold ml-3 text-gray-800">
                       gave
                     </h1>
                   </div>
@@ -349,7 +331,7 @@ export default function Index() {
               <div className="w-11/12 flex flex-col p-3 mt-20">
                 <div className=" p-5 border border-gray-200 p-5">
                   <h1 className="text-gray-600 text-9xl font-bold">2.</h1>
-                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
+                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold text-gray-800">
                     Share your plan with us
                   </h1>
                   <h1 className="mb-3 font-semibold text-4xl lg:text-4xl xl:text-3xl 2xl:text-4xl mt-8 text-gray-600">
@@ -358,7 +340,7 @@ export default function Index() {
                 </div>
                 <div className=" mt-12 border border-gray-200 p-5">
                   <h1 className="text-gray-600 text-9xl font-bold">4.</h1>
-                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
+                  <h1 className="mt-6 text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold text-gray-800">
                     Have fun on your trip
                   </h1>
                   <h1 className="mb-3 font-semibold text-4xl lg:text-4xl xl:text-3xl 2xl:text-4xl mt-8 text-gray-600">
@@ -1135,9 +1117,9 @@ export default function Index() {
           <h1 className="font-semibold text-xl text-white text-center">
             Join our mailing list for update about latest packages and deals!
           </h1>
-          <div className="relative mx-auto text-white  ">
+          <div className="relative mx-auto text-white place-content-center px-5 ">
             <input
-              className="border-b-2 border-gray-600 bg-transparent w-full text-white w-full h-16 mb-3 leading-tight focus:outline-none  text-white"
+              className="border-b-2 border-gray-600 bg-transparent  w-full text-white w-full h-16 mb-3 leading-tight focus:outline-none  text-white"
               id="grid-Email"
               type="text"
               placeholder="Email"
