@@ -14,26 +14,17 @@ export default function Index() {
     <>
       <div className="justify-center container mx-auto">
         <div className="  ">
-          <nav className="container mx-auto ">
+          <nav className="">
             <div className="justify-between px-4 mx-auto items-center lg:max-w-7xl xl:flex 2xl:flex lg:flex md:px-8">
               <div>
                 <div className="flex items-center justify-between py-3 md:py-5 ">
                   <a href="#">
-                    <svg
-                      width="34"
-                      height="22"
-                      viewBox="0 0 34 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 7.8001L4.2 1.4001L1 3.0001L1 19.0001L4.2 20.6001M4.2 20.6001L20.2 12.6001M4.2 20.6001L26.6 9.4001V12.6001M7.4 12.6001L10.6 11.0001L7.4 9.4001V12.6001ZM7.4 12.6001L20.2 6.2001M7.4 12.6001L29.8 1.4001L33 3.0001V19.0001L29.8 20.6001L17 14.2001"
-                        stroke="#1F2937"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
+                    <Image
+                      className="cursor-pointer"
+                      src="/Hourglass.svg"
+                      width={80}
+                      height={80}
+                    />
                   </a>
                   <div className="xl:hidden 2xl:hidden lg:hidden">
                     <button
@@ -41,42 +32,12 @@ export default function Index() {
                       onClick={() => setNavbar(!navbar)}
                     >
                       {navbar ? (
-                        <svg
-                          width="17"
-                          height="18"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <metadata id="imagebot_6">image/svg+xml</metadata>
-                          <g label="Layer 1" id="imagebot_2">
-                            <g
-                              label="Layer 1"
-                              transform="translate(-7.38281, -6.73438) matrix(0.793666, 0, 0, 0.822399, 3.34257, 2.74278)"
-                              id="imagebot_3"
-                            >
-                              <path
-                                opacity="0.8"
-                                fill="#000000"
-                                stroke="#000000"
-                                stroke-width="4"
-                                stroke-linecap="round"
-                                stroke-miterlimit="4"
-                                d="M5.09028,4.85182L27.05888,26.99902"
-                                id="imagebot_5"
-                              />
-                              <path
-                                opacity="0.8"
-                                fill="#000000"
-                                stroke="#000000"
-                                stroke-width="4"
-                                stroke-linecap="round"
-                                stroke-miterlimit="4"
-                                d="M5.09028,26.99902L27.05888,4.85182"
-                                id="imagebot_4"
-                              />
-                            </g>
-                            <title>Layer 1</title>
-                          </g>
-                        </svg>
+                        <Image
+                          className="cursor-pointer "
+                          src="/close.svg"
+                          width={20}
+                          height={20}
+                        />
                       ) : (
                         <svg
                           fill="#000000"
@@ -99,7 +60,7 @@ export default function Index() {
                   }`}
                 >
                   <ul
-                    className="items-center gap-20
+                    className="items-center gap-20 px-4
                jy-center  xl:flex 2xl:flex lg:flex space-y-0"
                   >
                     <li className="py-3">
@@ -196,6 +157,12 @@ export default function Index() {
             <h1 className="text-3xl text-center text-gray-800 mt-12 font-bold uppercase ">
               BAREFOOT ADVENTURES
             </h1>
+            <h1 className="text-gray-600 mt-5 text-sm md:text-md text-center">
+              {" "}
+              A travel agency is a tourism-related services to the general
+              public to offer different kinds of travelling packages for each
+              destination.
+            </h1>
           </div>
           <div className="mt-6">
             <div className="">
@@ -209,7 +176,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="container pt-32 pb-32 mx-auto">
+      <div className="container pt-12 pb-12 lg:pt-32 lg:pb-32 xl:pt-32 xl:pb-32 2xl:pt-32 2xl:pb-32 mx-auto">
         <div className="gap-12 flex flex-col lg:flex-col xl:flex-row 2xl:flex-row justify-items-center place-content-center items-center justify-center">
           <div className="w-9/12 mx-auto mb-12 lg:mb-0 xl:mb-0 2xl:mb-0">
             <h1 className="text-4xl lg:text-9xl xl:text-9xl 2xl:text-9xl font-bold text-center  text-gray-800">
@@ -219,7 +186,7 @@ export default function Index() {
               <button className="hidden lg:block 2xl:block xl:block mx-auto text-center font-semibold  text-xl bg-gray-800 hover:bg-gray-600 focus:bg-gray-600 text-white px-10 py-4 flex">
                 Book Now
               </button>
-              <button className="block lg:hidden xl:hidden 2xl:hidden mx-auto text-center justify-center items-center font-semibold  text-xl bg-gray-800 hover:bg-gray-600 focus:bg-gray-600 text-white py-6 w-full flex">
+              <button className="block lg:hidden xl:hidden 2xl:hidden mx-auto text-center justify-center items-center font-semibold  text-xl bg-gray-800 hover:bg-gray-600 focus:bg-gray-600 text-white py-4 w-full flex">
                 Book Now
               </button>
             </div>
@@ -240,7 +207,7 @@ export default function Index() {
                     <div className="text-2xl font-bold text-gray-600 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       Batch 1
                     </div>
-                    <h3 className="text-2xl mt-2 text-gray-800 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
+                    <h3 className="text-xl mt-2 text-gray-800 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       August 1, 2022
                     </h3>
                   </div>
@@ -253,7 +220,7 @@ export default function Index() {
                     <div className="text-2xl font-bold text-center text-gray-600  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       Batch 2
                     </div>
-                    <h3 className="text-2xl mt-2 text-center text-gray-800  lg:text-left md:text-left xl:text-left 2xl:text-left">
+                    <h3 className="text-xl mt-2 text-center text-gray-800  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       August 15, 2022
                     </h3>
                   </div>
@@ -266,7 +233,7 @@ export default function Index() {
                     <div className="text-2xl font-semibold text-center text-gray-600  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       Batch 3
                     </div>
-                    <h3 className="text-2xl mt-2 text-gray-800 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
+                    <h3 className="text-xl mt-2 text-gray-800 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       August 25, 2022
                     </h3>
                   </div>
@@ -279,7 +246,7 @@ export default function Index() {
                     <div className="text-2xl font-bold text-gray-600 text-center lg:text-left md:text-left xl:text-left 2xl:text-left">
                       Batch 4
                     </div>
-                    <h3 className="text-2xl mt-2 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
+                    <h3 className="text-xl mt-2 text-center  lg:text-left md:text-left xl:text-left 2xl:text-left">
                       September 1, 2022
                     </h3>
                   </div>
@@ -397,8 +364,8 @@ export default function Index() {
               </h1>
             </div>
           </div>
-          <div className="w-11/12">
-            <div className=" border border-gray-200 p-5 mt-12 " height={368}>
+          <div className="w-11/12 mt-0 md:mt-16 lg:mt-16 xl:mt-16 2xl:mt-16">
+            <div className=" border border-gray-200 p-5  " height={368}>
               <h1 className="text-gray-600 text-9xl font-bold">3.</h1>
               <h1 className="text-2xl md:text-4xl lg:text-7xl xl:text-6xl 2xl:text-7xl lg:text-7xl xl:text-6xl 2xl:text-7xl font-semibold">
                 Finalize the plan we give
@@ -528,8 +495,8 @@ export default function Index() {
       </div>
       <div className="container mx-auto block  2xl:hidden xl:hidden p-5">
         <div className="flex flex-col justify-center items-center mx-auto place-content-center">
-          <div className="mb-12">
-            <h1 className="text-3xl md:text-3xl lg:text-6xl  text-center xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+          <div className="mb-2  lg:mb-12 xl:mb-12 2xl:mb-12">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  text-center xl:text-9xl  2xl:text-9xl font-bold mt-16  lg:mt-44 xl:mt-44 2xl:mt-44 text-gray-800">
               POPULAR PLACES
             </h1>
           </div>
@@ -550,7 +517,7 @@ export default function Index() {
             </h1>
           </div>
           <div className="mb-12">
-            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-44 text-gray-800">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-16  lg:mt-44 xl:mt-44 2xl:mt-44 text-gray-800">
               TO GO AND LIVE
             </h1>
           </div>
@@ -571,7 +538,7 @@ export default function Index() {
             </h1>
           </div>
           <div className="mb-12">
-            <h1 className="text-3xl md:text-3xl lg:text-6xl text-center  xl:text-9xl  2xl:text-9xl font-bold mt-44 text-gray-800">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl text-center  xl:text-9xl  2xl:text-9xl font-bold mt-16  lg:mt-44 xl:mt-44 2xl:mt-44 text-gray-800">
               TO HAVE FUN
             </h1>
           </div>
@@ -592,7 +559,7 @@ export default function Index() {
             </h1>
           </div>
           <div className="mb-12">
-            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl text-center  2xl:text-9xl font-bold mt-44 text-gray-800">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl text-center  2xl:text-9xl font-bold mt-16  lg:mt-44 xl:mt-44 2xl:mt-44 text-gray-800">
               TO WATCH SUNSETS
             </h1>
           </div>
@@ -613,7 +580,7 @@ export default function Index() {
             </h1>
           </div>
           <div className="mb-12">
-            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-44 text-gray-800">
+            <h1 className="text-3xl md:text-3xl lg:text-6xl  xl:text-9xl  2xl:text-9xl text-center font-bold mt-16  lg:mt-44 xl:mt-44 2xl:mt-44 text-gray-800">
               TO HAVE MOMENT OF A LIFETIME
             </h1>
           </div>
@@ -635,23 +602,26 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-32 mb-12" id="section5">
+      <div
+        className="container mx-auto mt-0 lg:mt-32xl:mt-32 2xl:mt-32   mb-12"
+        id="section5"
+      >
         <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mx-auto gap-12 ">
           <div className="w-11/12">
-            <h1 className="text-2xl lg:text-7xl xl:text-9xl 2xl:text-9xl font-bold mt-20 text-gray-800 text-center">
+            <h1 className="text-3xl ml-8 md:ml-16 xl:ml-0 2xl:ml-0 lg:ml-0 lg:text-7xl xl:text-9xl 2xl:text-9xl font-bold mt-20 text-gray-800 text-center">
               ABOUT US
             </h1>
           </div>
           <div className="w-10/12 mx-auto">
-            <div className="">
+            <div className=" flex justify-center items-center ">
               <Image
-                className=""
+                className=" "
                 src="/Hourglass (1).svg"
                 width={128}
                 height={128}
               />
             </div>
-            <h1 className="text-xl md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl font-semibold mt-8 text-gray-600">
+            <h1 className="text-md md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl text-center lg:text-left xl:text-left 2xl:text-left font-semibold mt-8 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
               laoreet lectus quam, quis euismod turpis ornare quis. Morbi
               tincidunt erat quis eros semper dignissim. Cras risus dui,
@@ -664,7 +634,7 @@ export default function Index() {
       <div className="container mx-auto mt-12 mb-12" id="section4">
         <div className="flex  flex-col-reverse  lg:flex-row xl:flex-row">
           <div className="flex flex-col md:flex-row lg;lflex-row 2xl:flex-row gap-12  mx-auto">
-            <div className="mt-6  md:mt-24 lg:mt-24 xl:mt-24 2xl:mt-24">
+            <div className="mt-12  md:mt-24 lg:mt-24 xl:mt-24 2xl:mt-24">
               <h1 className="text-6xl font-semibold text-gray-800">10M+</h1>
               <h1 className="text-2xl font-semibold text-gray-600">VISITORS</h1>
             </div>
@@ -690,18 +660,18 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto pt-32 ">
+      <div className="container mx-auto pt-3 lg:pt-32 xl:pt-32 2xl:pt-32 px-5 lg:px-0 xl:px-0 2xl:px-2">
         <div className=" mt-12">
           <h1 className="text-2xl lg:text-6xl xl:text-9xl 2xl:text-9xl font-bold text-gray-800  ">
             HOLIDAYS SEASON SPECIAL OFFERS
           </h1>
           <div className="flex">
-            <div className="">
+            <div className="flex">
               <h1 className="text-xl lg:text-4xl 2xl:text-4xl xl:text-4xl font-semibold mt-12 text-gray-600">
                 A 20 days trip to all your favourite destinations
               </h1>
             </div>
-            <div className="ml-auto">
+            <div className="ml-auto mt-12 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
               <Image
                 className=""
                 src="/arrow-forward.svg"
