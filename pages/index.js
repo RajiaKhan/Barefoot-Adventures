@@ -613,7 +613,15 @@ export default function Index() {
             </h1>
           </div>
           <div className="w-10/12 mx-auto">
-            <div className=" flex justify-center items-center ">
+            <div className="block lg:hidden xl:hidden 2xl:hidden flex justify-center items-center ">
+              <Image
+                className=" "
+                src="/Hourglass (1).svg"
+                width={128}
+                height={128}
+              />
+            </div>
+            <div className="hidden lg:block xl:block 2xl:block ">
               <Image
                 className=" "
                 src="/Hourglass (1).svg"
