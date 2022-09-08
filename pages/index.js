@@ -706,7 +706,7 @@ export default function Index() {
               <ButtonBack
                 role="button"
                 aria-label="slide backward"
-                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-2 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
                 id="prev"
               >
                 <svg
@@ -817,17 +817,17 @@ export default function Index() {
             className="relative hidden sm:block"
             naturalSlideWidth={100}
             isIntrinsicHeight={true}
-            totalSlides={3}
+            totalSlides={6}
             visibleSlides={1}
             step={1}
             infinite={true}
             currentSlide={1}
           >
-            <div className="js-flickity flex justify-center items-center ">
+            <div className="js-flickity flex  ">
               <ButtonBack
                 role="button"
                 aria-label="slide backward"
-                className="w-12 h-12 md:w-14 md:h-14 rounded-full  flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full mt-32  flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
                 id="prev"
               >
                 <svg
@@ -906,11 +906,70 @@ export default function Index() {
                     </div>
                   </div>
                 </Slide>
+                <Slide className="carousel__inner-slideLarge" index={0}>
+                  <div className="gallery-cell">
+                    <div className="relative lg:block w-80 hidden ">
+                      <img
+                        src="/Rectangle 49.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 49.svg"
+                        alt="sitting area"
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide className="carousel__inner-slideLarge" index={1}>
+                  <div className="gallery-cell">
+                    <div className="relative lg:block hidden w-80 ">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden ">
+                      <img
+                        src="/Rectangle 50.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
+                <Slide className="carousel__inner-slideLarge" index={2}>
+                  <div className="gallery-cell">
+                    <div className="relative  w-80 lg:block hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover mx-auto"
+                      />
+                    </div>
+                    <div className="relative lg:hidden">
+                      <img
+                        src="/Rectangle 51.svg"
+                        width={296}
+                        height={265}
+                        className="object-center object-cover  mx-auto"
+                      />
+                    </div>
+                  </div>
+                </Slide>
               </Slider>
               <ButtonNext
                 role="button"
                 aria-label="slide forward"
-                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 right-0 mr-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full flex justify-center mt-32 items-center bg-white border border-gray-300 hover:bg-gray-400 absolute z-30 right-0 mr-8 lg:mr-8 xl:mr-12 2xl:mr-24 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
                 id="next"
               >
                 <svg
@@ -934,7 +993,7 @@ export default function Index() {
         </div>
       </div>
       <footer
-        className="hidden lg:block 2xl:block 2xl:block bg-gray-800 w-full hidden "
+        className="hidden lg:block 2xl:block 2xl:block bg-gray-800 w-full hidden  "
         id="section6"
       >
         <div className="relative container mx-auto">
